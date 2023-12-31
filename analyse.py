@@ -4,12 +4,12 @@ import pandas as dt
 # setup dataframe
 data = dt.read_csv('yearly_deaths_by_clinic.csv')
 
-# total deaths
-totalDeaths = data.max()['deaths']
-# beggining year
-minYear = data.min()['year']  
-# ending year
-maxYear = data.max()['year']  
+
+totalDeaths = data.max()['deaths']  # total deaths
+
+minYear = data.min()['year']  # beggining year
+
+maxYear = data.max()['year']  # ending year
 
 # most death reported clinic
 mostDeath = data['clinic'].describe()['top']
