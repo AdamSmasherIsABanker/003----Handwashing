@@ -16,5 +16,4 @@ mostDeath = data['clinic'].describe()['top']
 
 # basic info
 print("handwashing has contributed to "+str(totalDeaths)+" deaths from the year "+str(minYear)+" to the year "+str(maxYear)+".")
-print("")
 print("Most deaths were reported by " + mostDeath)
